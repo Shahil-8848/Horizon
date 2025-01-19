@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { ChevronDown, MapPin, Phone } from "lucide-react";
+import { ChevronDown, MapPin, Phone, Menu } from "lucide-react";
 import HorizonLogo from "../Photos/HorizonLogo.png";
 import { NewsSlider } from "./NewsSlider";
+import { Drawer } from "./Drawer";
 
 // Add keyframe animations
 const iconAnimationStyles = `
@@ -27,6 +28,7 @@ interface NavItem {
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
   useEffect(() => {
     // Add the animation styles to the document
@@ -125,8 +127,10 @@ const Header: React.FC = () => {
         >
           <div className="py-4 px-4">
             <div className="relative flex justify-center">
-              {/* News Slider */}
-              {!isScrolled && <NewsSlider />}
+              {/* News Slider - hidden on mobile */}
+              <div className="hidden md:block">
+                {!isScrolled && <NewsSlider />}
+              </div>
 
               {/* Logo centered */}
               <div className="flex justify-center">
@@ -134,14 +138,13 @@ const Header: React.FC = () => {
                   src={HorizonLogo || "/placeholder.svg"}
                   alt="Horizon Academy Logo"
                   width={100}
-                  
                   height={50}
                   className="transform-gpu"
                 />
               </div>
 
-              {/* Contact Info - Right aligned */}
-              <div className="absolute right-4 top-1/2 -translate-y-1/2 flex items-center space-x-8">
+              {/* Contact Info - Right aligned, hidden on mobile */}
+              <div className="hidden md:flex absolute right-4 top-1/2 -translate-y-1/2 items-center space-x-8">
                 <div className="flex items-center group cursor-pointer">
                   <MapPin
                     size={20}
@@ -169,21 +172,29 @@ const Header: React.FC = () => {
             isScrolled ? "bg-white shadow-md pt-5 pb-5" : "bg-gray-900/90"
           }`}
         >
-          <div className=" relative container mx-auto px-4">
-            <div className="  ">
-              {isScrolled ? (
-                <div className="absolute left-0">
+          <div className="relative container mx-auto px-4">
+            <div className="flex justify-between items-center md:justify-center">
+              {isScrolled && (
+                <div className="absolute left-4 top-1/2 -translate-y-1/2">
                   <Link to="/" className="">
                     <img
-                      src={HorizonLogo}
+                      src={HorizonLogo || "/placeholder.svg"}
                       alt="Horizon Academy Logo"
                       width={65}
                       height={65}
                     />
                   </Link>
                 </div>
-              ) : null}
-              <ul className="flex justify-center space-x-8 py-4">
+              )}
+              {/* Mobile menu button */}
+              <button
+                className="md:hidden text-gray-500 hover:text-gray-700"
+                onClick={() => setIsDrawerOpen(true)}
+              >
+                <Menu size={24} />
+              </button>
+              {/* Desktop menu */}
+              <ul className="hidden md:flex justify-center space-x-8 py-4">
                 {navItems.map((item) => (
                   <li
                     key={item.name}
@@ -230,6 +241,12 @@ const Header: React.FC = () => {
           </div>
         </nav>
       </div>
+      {/* Mobile Drawer */}
+      <Drawer
+        isOpen={isDrawerOpen}
+        onClose={() => setIsDrawerOpen(false)}
+        navItems={navItems}
+      />
     </header>
   );
 };

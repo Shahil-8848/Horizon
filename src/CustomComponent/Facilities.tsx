@@ -18,7 +18,7 @@ const facilities = [
     title: "Computer Labs",
     description:
       "State-of-the-art computer labs equipped with the latest hardware and software for practical learning experience.",
-    icon: "https://cdn-icons-png.flaticon.com/512/1786/1786971.png",
+    icon: "https://img.icons8.com/?size=100&id=Qh2tCGOAtV52&format=png&color=000000",
     bgColor: "from-blue-500/90 to-blue-600/90",
   },
   {
@@ -39,7 +39,7 @@ const facilities = [
     title: "Student Hostel",
     description:
       "Comfortable residential facilities with 24/7 supervision, study rooms, and modern amenities.",
-    icon: "https://cdn-icons-png.flaticon.com/512/1055/1055646.png",
+    icon: "https://img.icons8.com/?size=100&id=zVuzYLxp4Euc&format=png&color=000000",
     bgColor: "from-purple-500/90 to-purple-600/90",
   },
   {

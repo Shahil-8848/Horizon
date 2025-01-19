@@ -15,12 +15,12 @@ const Status = () => {
   const statsRef = useRef<HTMLDivElement>(null);
   const additionalTextRef = useRef<HTMLDivElement>(null);
   const stats: Stat[] = [
-    { label: "Years of Academic Excellence", value: "50", suffix: "+" },
-    { label: "Empowered Students", value: "10000", suffix: "+" },
-    { label: "Distinguished Faculty", value: "500", suffix: "+" },
+    { label: "Years of Academic Excellence", value: "25", suffix: "+" },
+    { label: "Empowered Students", value: "25000", suffix: "+" },
+    { label: "Distinguished Faculty", value: "15", suffix: "+" },
     {
-      label: "Groundbreaking Research Publications",
-      value: "1000",
+      label: "Teachers",
+      value: "55",
       suffix: "+",
     },
   ];
@@ -114,7 +114,12 @@ const Status = () => {
           ))}
         </div>
         <div ref={additionalTextRef} className="text-center text-white mt-16">
-          <h2 className="text-7xl font-extrabold mb-4 font-sans">25 Years</h2>
+          <h2 className="text-7xl font-extrabold mb-4 font-serif italic">
+            25 Years
+          </h2>
+          <span className="text-6xl font- mb-4 font-bold font-serif italic">
+            OF
+          </span>
           <p className="text-3xl font-medium text-white/90 font-serif italic">
             Serving Education with Excellence
           </p>

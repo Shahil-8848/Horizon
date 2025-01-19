@@ -19,14 +19,14 @@ const newsItems: NewsItem[] = [
   {
     id: 2,
     image: Singing,
-    title: "Science Exhibition",
-    description: "Students showcase their innovative projects",
+    title: "Horizon Idol 2081",
+    description: "Receiving the Singing award by the student",
   },
   {
     id: 3,
     image: Notice,
-    title: "Cultural Program",
-    description: "Celebrating our diverse cultural heritage",
+    title: "School Winter Vacation",
+    description: "School will be closed during winter Vacation  ",
   },
 ];
 
@@ -44,7 +44,7 @@ export function NewsSlider() {
   }, []);
 
   return (
-    <div className="absolute left-4 top-1/2 -translate-y-1/2 w-[320px] pl-5 bg-white-500 rounded-lg shadow-lg overflow-hidden">
+    <div className="absolute left-4 top-1/2 -translate-y-1/2 w-[320px] bg-green-100 pl-5 bg-white-500 rounded-lg shadow-lg overflow-hidden">
       <div className="relative h-[120px]">
         {newsItems.map((item, index) => (
           <div
