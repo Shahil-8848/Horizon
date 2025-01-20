@@ -6,7 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Event1 from "../../SchoolPics/Event1.jpg";
 import Farm from "../../SchoolPics/Farm.jpg";
 import Event4 from "../../SchoolPics/Event4.jpg";
-import Kids from "../../SchoolPics/Kids.jpg";
+import Art3 from "../../SchoolPics/art3.jpg";
 import Kids1 from "../../SchoolPics/Kids1.jpg";
 import NCC1 from "../../SchoolPics/NCC1.jpg";
 import Art1 from "../../SchoolPics/Art1.jpg";
@@ -80,7 +80,7 @@ const catalogueItems: CatalogueItem[] = [
     id: 7,
     title: "Library",
     description: "Extensive collection of books and digital resources",
-    imageUrl: Event4,
+    imageUrl: Art3,
     size: "medium",
     category: "Facilities",
   },

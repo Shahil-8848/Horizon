@@ -1,5 +1,3 @@
-"use client";
-
 import { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { Link } from "react-router-dom";
@@ -38,7 +36,7 @@ const programs: Program[] = [
     title: "Secondary School",
     ageGroup: "Grades 6-10",
     description:
-      "Comprehensive education focusing on academic excellence, character development, and practical skills for future success.",
+      "Comprehensive education focusing on academic excellence, character development, and practical skills, ethics builiding  for future success.",
     imageUrl: SeniorKids,
     link: "/programs/secondary",
   },
@@ -72,7 +70,7 @@ export default function ProgramCards() {
         transformOrigin: "bottom left",
       });
       gsap.set(details, { y: 30, opacity: 0 });
-      gsap.set(title, { y: 40, opacity: 1 }); // Positioned title above the bottom
+      gsap.set(title, { y: 0, opacity: 1 }); // Title at the bottom
 
       // Create hover timeline
       const tl = gsap.timeline({ paused: true });
@@ -86,7 +84,7 @@ export default function ProgramCards() {
         .to(
           title,
           {
-            y: -60, // Move title up
+            y: -40, // Move title up
             duration: 0.3,
             ease: "power2.out",
           },
@@ -110,46 +108,44 @@ export default function ProgramCards() {
   }, []);
 
   return (
-    <section className="py-12 px-4 md:py-20 md:px-6">
+    <section className="py-12 px-4 md:py-20 md:px-6 bg-gray-100">
       <div
         ref={cardsRef}
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 max-w-[1600px] mx-auto"
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 max-w-[1600px] mx-auto"
       >
         {programs.map((program, index) => (
           <Link
             to={program.link}
             key={index}
-            className="group relative overflow-hidden rounded-xl aspect-[4/5] cursor-pointer transform transition-transform duration-500 hover:scale-[1.02] w-full h-full shadow-lg"
+            className="group relative overflow-hidden rounded-xl aspect-[4/5] cursor-pointer transform transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl w-full h-full shadow-lg"
           >
             <div className="absolute inset-0 w-full h-full">
               <img
-                src={program.imageUrl}
+                src={program.imageUrl || "/placeholder.svg"}
                 alt={program.title}
                 className="w-full h-full object-cover object-center transform transition-transform duration-700 group-hover:scale-110"
               />
             </div>
 
-            {/* Inner Bottom Shadow */}
-            <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-black/70 to-transparent pointer-events-none"></div>
+            {/* Enhanced Bottom Gradient */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-70 group-hover:opacity-90 transition-opacity duration-300"></div>
 
             <div className="overlay absolute inset-0 bg-gradient-to-tr from-primary/90 via-primary/75 to-primary/50" />
 
-            <div className="absolute inset-0 flex flex-col justify-end p-6 ">
-              <div className="title transform transition-transform duration-500">
-                <h3 className="text-white text-3xl md:text-4xl font-semibold tracking-tight">
+            <div className="content absolute inset-0 flex flex-col justify-end p-6 text-white">
+              <div className="title transform transition-transform duration-500 mb-2">
+                <h3 className="text-2xl md:text-3xl font-bold tracking-tight drop-shadow-lg">
                   {program.title}
                 </h3>
+                <p className="text-lg font-medium tracking-wide text-white/90 drop-shadow-lg">
+                  {program.ageGroup}
+                </p>
               </div>
 
-              <div className="details space-y-4 mt-4">
-                <div className="space-y-2">
-                  <p className="text-white/90 text-lg font-medium tracking-wide">
-                    {program.ageGroup}
-                  </p>
-                  <p className="text-white/80 text-base md:text-lg leading-relaxed">
-                    {program.description}
-                  </p>
-                </div>
+              <div className="details space-y-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <p className="text-white/90 text-sm md:text-base leading-relaxed drop-shadow-lg">
+                  {program.description}
+                </p>
                 <div className="flex items-center space-x-2 text-white">
                   <span className="text-sm md:text-base font-semibold tracking-wide uppercase">
                     Explore Program
