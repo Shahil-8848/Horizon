@@ -179,7 +179,7 @@ export default function ProgramDetails() {
   const { programId } = useParams<{ programId: string }>();
   const program = programData[programId as keyof typeof programData];
 
-  if (program) {
+  if (!program) {
     return <div className="bg-red-500 pt-50">Program not found</div>;
   }
 
