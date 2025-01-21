@@ -20,7 +20,7 @@ const Status = () => {
     { label: "Distinguished Faculty", value: "15", suffix: "+" },
     {
       label: "Teachers",
-      value: "55",
+      value: "250",
       suffix: "+",
     },
   ];
@@ -115,9 +115,9 @@ const Status = () => {
         </div>
         <div ref={additionalTextRef} className="text-center text-white mt-16">
           <h2 className="text-7xl font-extrabold mb-4 font-serif italic">
-            25 Years
+            35 Years
           </h2>
-          <span className="text-6xl font- mb-4 font-bold font-serif italic">
+          <span className="text-5xl font- mb-4 font-bold font-serif italic">
             OF
           </span>
           <p className="text-3xl font-medium text-white/90 font-serif italic">

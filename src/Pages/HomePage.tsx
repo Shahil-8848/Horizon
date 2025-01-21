@@ -9,20 +9,21 @@ import Status from "@/CustomComponent/Status";
 // import Catergories from "@/CustomComponent/Catergories";
 import FullScreenGallery from "@/CustomComponent/FullScreenGallery";
 import NewsAndEvents from "@/CustomComponent/News&Event";
-import Footer from "@/CustomComponent/Footer";
+// import Footer from "@/CustomComponent/Footer";
 import VideoBar from "@/CustomComponent/VideoBar";
 import HorizonVideo from "../../SchoolPics/HorizonVideo.mp4";
-import ProgramCards from "@/CustomComponent/Part/ProgramCard";
+import ProgramCards from "@/CustomComponent/Classes/ProgramCard";
 import Catalogue from "@/CustomComponent/Catalogue";
 import OutroVideo1 from "../../SchoolPics/OutroVideo.mp4";
 import OutroVideo from "@/CustomComponent/OutroVideo";
 import Sports from "@/CustomComponent/Sports";
 import SingingShowcase from "@/CustomComponent/Singing";
-import Header from "@/CustomComponent/Header";
+// import Header from "@/CustomComponent/Header";
 import PrincipalMessage from "@/CustomComponent/Message";
 // import HorizontalScrollCards from "@/CustomComponent/Part/HorizontalScrollCards";
 import TeacherCards from "@/CustomComponent/Teachers";
 import Facilities from "@/CustomComponent/Facilities";
+import Bangalore from "@/CustomComponent/Banglore";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -123,8 +124,6 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen  max-w-screen flex flex-col bg-white">
-      <Header />
-
       {/* Banner Section */}
       <Banner />
       <VideoBar videoSrc={HorizonVideo} />
@@ -139,6 +138,7 @@ export default function HomePage() {
       <SingingShowcase />
       <FullScreenGallery />
       <Catalogue />
+      <Bangalore />
       {/* <HorizontalScrollCards /> */}
       <TeacherCards />
       <Facilities />
@@ -171,7 +171,6 @@ export default function HomePage() {
       {/* Events Section */}
 
       {/* Footer */}
-      <Footer />
     </div>
   );
 }

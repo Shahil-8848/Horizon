@@ -106,24 +106,25 @@ const Sports: React.FC = () => {
             Welcome to East Horizon English High School
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed">
+            East Horizon English High School was established in 2048 BS after a
+            lot of deliberation with the objective of not only imparting quality
+            education in English medium but, bearing in mind the psychological
+            and physical needs of the student, also guiding and training them so
+            as to enable them to become responsible and dutiful citizens in
+            future.
+          </p>
+          <p className="text-lg text-gray-600 leading-relaxed">
+            Having crossed more than 33 years in the service of the nation, the
+            school has expanded and developed into a full-fledged Higher
+            Secondary School (+2) as a result of the commitment of the
+            authorities and facilities to put their heart and soul into the
+            execution of this noble, solemn and sacred task. (Education for a
+            better tomorrow) has been adopted as the motto of the institution.
             At our prestigious institution, we pride ourselves on our
             exceptional faculty members who bring years of experience and
             dedication to their craft. Each teacher is carefully selected not
             only for their academic excellence but also for their passion in
             nurturing the next generation of leaders.
-          </p>
-          <p className="text-lg text-gray-600 leading-relaxed">
-            East Horizon English High School was established in 2048 after a lot
-            of deliberation with the objective of not only imparting quality
-            education in English medium but, bearing in mind the psychological
-            and physical needs of the student, also guiding and training them so
-            as to enable them to become responsible and dutiful citizens in
-            future. Having crossed more than 33 years in the service of the
-            nation, the school has expanded and developed into a full-fledged
-            Higher Secondary School (+2) as a result of the commitment of the
-            authorities and facilities to put their heart and soul into the
-            execution of this noble, solemn and sacred task. (Education for a
-            better tomorrow) has been adopted as the motto of the institution.
           </p>
         </div>
       </div>

@@ -44,7 +44,7 @@ export default function SingingShowcase() {
         {
           opacity: 1,
           x: 0,
-          duration: 1.4,
+          duration: 2,
           ease: "power3.out",
         },
         "-=1"
