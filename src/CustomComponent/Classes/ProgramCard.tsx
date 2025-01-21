@@ -28,7 +28,7 @@ const programs: Program[] = [
     title: "Primary School",
     ageGroup: "Grades 1-5",
     description:
-      "Building strong foundations through engaging curriculum and personalized attention, preparing students for higher academic challenges.",
+      "Building strong foundations through engaging curriculum and personalized attention,caring,mentoring and  preparing students for higher academic challenges.",
     imageUrl: Primary,
     link: "/programs/primary",
   },
