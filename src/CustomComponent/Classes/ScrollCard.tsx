@@ -43,3 +43,4 @@ export const ScrollCard: React.FC<CardProps> = ({
     </motion.div>
   );
 };
+//i just added a comment
