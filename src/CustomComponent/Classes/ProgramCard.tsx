@@ -36,7 +36,7 @@ const programs: Program[] = [
     title: "Secondary School",
     ageGroup: "Grades 6-10",
     description:
-      "Comprehensive education focusing on academic excellence, character development, and practical skills for future success.",
+      "Comprehensive education focusing on academic excellence, character development,attention,caring,mentoring and practical skills for future success.",
     imageUrl: SeniorKids,
     link: "/programs/secondary",
   },
@@ -58,7 +58,7 @@ export default function ProgramCards() {
     if (!cards) return;
 
     Array.from(cards).forEach((card) => {
-      const content = card.querySelector(".content");
+      // const content = card.querySelector(".content");
       const overlay = card.querySelector(".overlay");
       const title = card.querySelector(".title");
       const details = card.querySelector(".details");
