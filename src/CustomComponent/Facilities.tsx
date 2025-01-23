@@ -14,6 +14,7 @@ const facilities = [
     icon: "https://cdn-icons-png.flaticon.com/512/3097/3097180.png",
     bgColor: "from-yellow-500/90 to-amber-600/90",
   },
+  
   {
     title: "Computer Labs",
     description:

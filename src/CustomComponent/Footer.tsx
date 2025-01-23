@@ -155,12 +155,12 @@ const Footer: React.FC = () => {
               All Rights Reserved
             </p>
             <div className="flex items-center space-x-2">
-              <span>Powered By:</span>
+              <span>Developed By:</span>
               <a
                 href="https://digitalnepal.com"
                 className="text-white hover:text-white/80 transition-colors font-medium"
               >
-                Shahil
+                Shahil Budathoki
               </a>
             </div>
           </div>

@@ -1,7 +1,7 @@
 import Footer from "@/CustomComponent/Footer";
 import Header from "@/CustomComponent/Header";
 import type React from "react";
-import { Link } from "react-router-dom";
+
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -13,6 +13,7 @@ export default function Layout({ children }: LayoutProps) {
       <Header />
       <main className="flex-grow">{children}</main>
       <Footer />
+      
     </div>
   );
 }

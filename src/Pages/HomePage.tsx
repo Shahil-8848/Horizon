@@ -137,12 +137,12 @@ export default function HomePage() {
       <Sports />
       <SingingShowcase />
       <FullScreenGallery />
+      <NewsAndEvents />
       <Catalogue />
       <Bangalore />
       {/* <HorizontalScrollCards /> */}
       <TeacherCards />
       <Facilities />
-      <NewsAndEvents />
 
       {/* Timeline Section */}
       <section className="py-24 bg-gray-900 text-white">

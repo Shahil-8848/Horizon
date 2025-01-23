@@ -7,7 +7,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import kinderPic from "../../SchoolPics/kinderPic.jpg";
 import krishna from "../../SchoolPics/Krishna2.jpg";
 import kinderPic3 from "../../SchoolPics/kinderPic3.jpg";
-import kinderPic4 from "../../SchoolPics/kinderPic4.jpg";
+
 import PipeBand2 from "../../SchoolPics/PipeBand2.jpg";
 import Personal4 from "../../SchoolPics/Personal4.jpg";
 
