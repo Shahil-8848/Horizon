@@ -143,14 +143,14 @@ const Banner = () => {
         </div>
       ))}
 
-      <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/70">
+      <div className="absolute inset-0 bg-gradient-to-b from-black/20 to-black/50">
         <div
           // ref={contentRef}
           className="container mx-auto h-full flex mt-60 justify-center px-6"
         >
           <div className="text-center text-white max-w-3xl">
             <h1 className="text-7xl font-bold mb-6 leading-tight">
-              <span className="text-primary">
+              <span className="text-primary font-serif">
                 East Horizon English High School
               </span>
             </h1>

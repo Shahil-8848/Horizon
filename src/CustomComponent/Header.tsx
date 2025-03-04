@@ -150,7 +150,7 @@ const Header: React.FC = () => {
                     size={20}
                     className="location-icon text-red-600 mr-2 transition-transform duration-300 group-hover:scale-110"
                   />
-                  <span className="text-sm font-medium">
+                  <span className="text-base font-semibold tracking-wide uppercase text-gray-500">
                     Mechinagar, Dhulabari
                   </span>
                 </div>
@@ -159,7 +159,9 @@ const Header: React.FC = () => {
                     size={20}
                     className="phone-icon text-green-600 mr-2 transition-transform duration-200 group-hover:scale-110"
                   />
-                  <span className="text-sm font-medium">+977 123-456-7890</span>
+                  <span className="text-base font-semibold tracking-wide uppercase text-gray-500">
+                    +977 123-456-7890
+                  </span>
                 </div>
               </div>
             </div>
