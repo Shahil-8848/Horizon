@@ -92,7 +92,7 @@ const OutroVideo: React.FC<OuterVideoProps> = ({ videoSrc }) => {
         className="absolute inset-0 flex items-center justify-center z-20"
       >
         <h2 className="text-white text-5xl md:text-7xl font-bold text-center font-cursive">
-          For a Better Tomorrow
+          For a Better Tomorrow .
         </h2>
       </div>
     </div>
