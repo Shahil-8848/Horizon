@@ -83,7 +83,7 @@ export default function SingingShowcase() {
           The <span className="text-indigo-600">Harmony</span> of Talent
         </h2>
         <p className="description text-lg md:text-xl text-gray-600 leading-relaxed">
-          Our singing group is a{" "}
+          Our school workforceis a single group is a{" "}
           <span className="text-indigo-500 font-medium">melody</span> of voices,
           united in passion and creativity. With every performance, they inspire
           and captivate, showcasing the beauty of{" "}
