@@ -131,6 +131,7 @@ const Header: React.FC = () => {
               <div className="hidden md:block">
                 {!isScrolled && <NewsSlider />}
               </div>
+              <h1>This is me</h1>
 
               {/* Logo centered */}
               <div className="flex justify-center">
