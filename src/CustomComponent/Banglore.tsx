@@ -118,7 +118,7 @@ const Bangalore: React.FC = () => {
               <p>
                 The memories created during this journey will undoubtedly last a
                 lifetime, inspiring our students to continue their musical
-                pursuits with renewed passion and a global perspective WITH CAMMNESSS.
+                pursuits with asdfd renewed passion and a global perspective WITH CAMMNESSS.
               </p>
             </div>
           </div>
